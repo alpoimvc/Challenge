@@ -1,0 +1,256 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: #222222;
+	color: #C2C2C2;
+	font-size: 1vw;
+	line-height: 130%;
+}
+
+.nav {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #171717;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 90%;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  text-decoration: none;
+  margin: 0 0.3em 0 1.5em;
+}
+
+.nav .navRight {
+	float: right;
+	margin-right: 1em;
+}
+
+.yellowText {
+	color: #E2AE5A;
+}
+
+.pinkText {
+	color: #B48375;
+}
+
+.nav .icon {
+	font-size: 0.9rem;
+	border-radius: 50%;
+	background-color: #424242;
+	width: 1.7em;
+	color: white;
+}
+
+select {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+	border: 0;
+}
+
+.nav select {
+	background-color: #171717;
+	color: #525252;
+	padding-right: 2.3em;
+	background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, #171717, #171717);
+  	background-position:
+    calc(100% - 20px) calc(1em - 7px),
+    calc(100% - 15px) calc(1em - 7px),
+    100% 0;
+  	background-size:
+    3px 4px,
+    6px 3px,
+    2.5em 2.5em;
+  	background-repeat: no-repeat;
+}
+
+.nav select:focus {
+	background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, #171717, #171717);
+  	background-position:
+    calc(100% - 16px) calc(1em - 7px),
+    calc(100% - 20px) calc(1em - 7px),
+    100% 0;
+  	background-size:
+	4px 5px,
+    6px 5px,
+    2.5em 2.5em;
+  	background-repeat: no-repeat;
+}
+
+.nav option {
+	background-color: #242424;
+}
+
+.pageHeader{
+	background-color: #242424;
+	box-shadow: 0 2em 4em 0.1em #1D1D1D;
+	display: flex;
+	color: #525252;
+	font-size: 80%;
+}
+
+h2, h3 {
+	font-weight: normal;
+}
+
+.pageHeader h3 {
+	border-right: 1px solid black;
+	padding: 1.5em 0.8em 1.5em 0.8em;
+}
+
+.pageHeader i{
+	font-size: 1.5em;
+}
+
+.pageHeader div{
+	text-align: center;
+	border-right: 1px solid black;
+}
+
+.pageHeader #arrow {
+	padding: 0.8em 0.8em 0.5em 0.8em;
+}
+
+.pageHeader #arrow p {
+	padding-top: 0.2em;
+}
+
+.pageHeader #description {
+	padding: 2em 7em 1em 7em;
+	border-right: 1px solid black;
+	font-weight: bold;
+}
+
+.pageHeader #whiteSpace {
+	padding: 2em 13em 1em 13em;
+}
+
+.pageHeader #icons {
+	padding: 1em 0.8em 0.5em 0.8em;
+	display: flex;
+}
+
+.pageHeader #icons p {
+	padding: 0.5em 1em 0 1em;
+}
+
+.pageHeader #toggleOff {
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+.pageHeader .icon {
+	border: none;
+}
+
+.container {
+	padding: 2em 14em 2em 14em;
+	color: #BCBCBC;
+}
+
+.container h2 {
+	line-height: 200%;
+}
+
+.grid-container {
+	line-height: 200%;
+	grid-template-columns: auto auto auto;
+	display: grid;
+	padding-bottom: 3em;
+}
+
+.grid-item {
+	padding-top: 2em;
+}
+
+.tabbed{
+	background-color: #242424;
+	border-radius: 1.5em;
+	box-shadow: 0 0 5em 1em #1D1D1D;
+}
+
+#tabs {
+	border-bottom: 1px solid #171717;
+	padding: 0.5em 1.5em;
+}
+
+input.radio[type="radio"]{visibility:hidden;}
+
+input[type="radio"]:checked+label{ 
+	color: #E2AE5A;
+} 
+
+.tab_content {
+	padding: 3em 2em;
+}
+.tab_content p {
+	display:inline;
+	padding: 0.5em 0.5em;
+}
+
+.tab_content select {
+	padding: 0.7em 0.7em;
+	padding-right: 8em;
+	background-color: black;
+	color: #C2C2C2;
+	border: solid 4px black;
+	border-top-left-radius: 1.3em;
+	border-top-right-radius: 1.3em;
+	background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, black, black);
+  	background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  	background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  	background-repeat: no-repeat;
+}
+
+.tab_content select:focus {
+	background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, black, black);
+  	background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  	background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  	background-repeat: no-repeat;
+}
+
+.tab_content option {
+	background-color: #242424;
+}
+
+
+
+
+
